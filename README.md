@@ -3,20 +3,6 @@
 
 A deep learning-based binary image classifier built with TensorFlow/Keras that distinguishes between cats and dogs using Convolutional Neural Networks (CNN).
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Dataset Setup](#dataset-setup)
-- [Usage](#usage)
-- [Model Architecture](#model-architecture)
-- [Training Results](#training-results)
-- [Prediction](#prediction)
-- [Troubleshooting](#troubleshooting)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
-
 ## ✨ Features
 
 - **Deep CNN Architecture**: 4-layer convolutional neural network for robust feature extraction
@@ -37,8 +23,7 @@ A deep learning-based binary image classifier built with TensorFlow/Keras that d
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/cat-dog-classifier.git
-cd cat-dog-classifier
+git clone https://github.com/AdityaBawankule1/Image-Classification-using-CNN.git
 ```
 
 2. Install required packages:
@@ -46,24 +31,19 @@ cd cat-dog-classifier
 pip install tensorflow numpy matplotlib
 ```
 
-Or using requirements.txt:
-```bash
-pip install -r requirements.txt
-```
-
 ## 📁 Dataset Setup
 
 Organize your images in the following structure:
 
 ```
-your_dataset_folder/
-├── cats/
-│   ├── cat1.jpg
-│   ├── cat2.jpg
+PetImages/
+├── Cat/
+│   ├── 1.jpg
+│   ├── 2.jpg
 │   └── ... (1000 cat images)
-└── dogs/
-    ├── dog1.jpg
-    ├── dog2.jpg
+└── Dog/
+    ├── 1.jpg
+    ├── 2.jpg
     └── ... (1000 dog images)
 ```
 
@@ -82,12 +62,7 @@ your_dataset_folder/
 DATA_DIR = 'path/to/your/image/folder'
 ```
 
-2. Run the training script:
-```bash
-python cat_dog_classifier.py
-```
-
-3. The model will:
+2. The model will:
    - Load and preprocess images
    - Apply data augmentation
    - Train for 20 epochs
